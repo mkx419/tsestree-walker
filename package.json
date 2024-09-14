@@ -1,0 +1,64 @@
+{
+  "name": "@mkx419/tsestree-walker",
+  "version": "0.0.0",
+  "description": "Traverse an TypeScript ESTree-compliant AST",
+  "keywords": [],
+  "homepage": "https://github.com/mkx419/tsestree-walker?tab=readme-ov-file#readme-ov-file",
+  "bugs": {
+    "url": "https://github.com/mkx419/tsestree-walker/issues",
+    "email": "mkx419@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "mkx419",
+    "email": "mkx419@gmail.com"
+  },
+  "type": "module",
+  "files": [
+    "./dist"
+  ],
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
+  "main": "./dist/index.cjs",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkx419/tsestree-walker.git"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format=cjs,esm --dts",
+    "lint": "prettier --check . && eslint .",
+    "format": "prettier --write . && eslint --fix ."
+  },
+  "packageManager": "pnpm@9.9.0",
+  "engines": {
+    "pnpm": "^9.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@typescript-eslint/typescript-estree": "^8.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@types/eslint__js": "^8.42.3",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "tsup": "^8.2.4",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.5.0"
+  }
+}

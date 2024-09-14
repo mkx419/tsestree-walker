@@ -1,0 +1,21 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    versioning-strategy: "increase"
+    groups:
+      dependencies:
+        patterns:
+          - "@typescript-eslint/typescript-estree"
+      dev-dependencies:
+        patterns:
+          - "@eslint/js"
+          - "@types/eslint__js"
+          - "eslint"
+          - "eslint-config-prettier"
+          - "prettier"
+          - "tsup"
+          - "typescript"
+          - "typescript-eslint"
