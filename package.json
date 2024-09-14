@@ -1,6 +1,6 @@
 {
   "name": "@mkx419/tsestree-walker",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Traverse an TypeScript ESTree-compliant AST",
   "keywords": [],
   "homepage": "https://github.com/mkx419/tsestree-walker?tab=readme-ov-file#readme-ov-file",
