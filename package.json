@@ -49,7 +49,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@typescript-eslint/typescript-estree": "^8.11.0"
+    "@typescript-eslint/typescript-estree": "^8.12.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
